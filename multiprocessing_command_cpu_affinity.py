@@ -41,6 +41,14 @@ if __name__ == '__main__':
         [1, 3]
     ]
 
+    # Or if you prefer it to run only one of the cores to prevent context switching:
+#     cpu_affinities = [
+#     [0],  # Process 1 → Core 0
+#     [1],  # Process 2 → Core 1
+#     [2],  # Process 3 → Core 2
+#     [3]   # Process 4 → Core 3
+# ]
+
     queue = Queue()       # Shared queue for collecting results
     processes = []        # To track all spawned processes
 
