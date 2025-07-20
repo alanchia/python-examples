@@ -66,4 +66,4 @@ if __name__ == '__main__':
     while not queue.empty():
         cmd, output = queue.get()
         print(f"$ {cmd}")
-        print(
+        print(output)
